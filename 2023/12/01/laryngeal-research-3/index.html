@@ -36,9 +36,11 @@ MotivationLaryngeal cancer accounts for a smaller proportion of head an"><meta n
 <li>Variables considered: patient age, smoking history, alcohol intake, and acoustic measures such as jitter, vF0, shimmer, MFR, NHR, etc.  </li>
 <li>Results highlighted <strong>age, smoking, F0, vF0, MFR, NHR</strong> as most correlated with malignancy.</li>
 </ul>
-<blockquote>
-<p>Table III (from the paper) reports the regression coefficients, odds ratios, and significance for each factor.</p>
-</blockquote>
+<figure>
+  <img src="/images/result_multinomial_logisitic_regression.gif" alt="Results of multinomial logistic regression">
+  <figcaption>Table 1. Results of Multinomial Logistic Regression</figcaption>
+</figure>
+
 <h2 id="Multimodal-Embedding"><a href="#Multimodal-Embedding" class="headerlink" title="Multimodal Embedding"></a>Multimodal Embedding</h2><p>The selected metadata and acoustic parameters were <strong>embedded alongside MFCC</strong> in a composite input image:</p>
 <ul>
 <li>Base: <strong>224×224 MFCC spectrogram</strong> placed centrally  </li>
@@ -47,7 +49,7 @@ MotivationLaryngeal cancer accounts for a smaller proportion of head an"><meta n
 <li>Spatial arrangement positioned each variable consistently around the MFCC core</li>
 </ul>
 <figure>
-  <img src="/images/ieee_embedding_layout.jpg" alt="Multimodal embedding layout">
+  <img src="/images/embedding_matrix.gif" alt="Multimodal embedding layout">
   <figcaption>Fig. 2. Layout of multimodal embedding: MFCC in the center, surrounded by patient and acoustic embeddings.</figcaption>
 </figure>
 
