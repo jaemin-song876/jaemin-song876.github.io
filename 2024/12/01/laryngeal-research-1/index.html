@@ -1,29 +1,28 @@
 <!DOCTYPE html><html lang="zh-CN" theme="default"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jaemin"><title>Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters · Jaemin Song</title><meta name="description" content="Jaemin Song, Hyunbum Kim, Yong Oh LeeHeliyon, 2024
-• Frequencies below the 1st formant are crucial for detecting laryngeal diseases.• 1&amp;#x2F;3 octave "><meta name="keywords" content="good"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta id="site_data_static" data-url="/"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/jaemin_2_circle.png"><link rel="stylesheet" href="/js_complied/bundle.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu&amp;display=swap" rel="stylesheet"><script src="/js_complied/bundle.js"></script><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script><meta name="generator" content="Hexo 7.3.0"></head><body> <main-outlet><div class="page-top animated"><div class="nav"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/research/">Research</a></li><li><a href="/project/">Project</a></li><li><a href="/cv">CV</a></li><li><a href="/link">Links</a></li></div><div class="information"><div class="nav_right_btn"><li class="btn-toggle-more"><i class="fa fa-ellipsis"></i></li><li class="btn-go-back"><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li class="btn-search"><a class="fa fa-search" onclick="Anatolo.search.openWindow();"></a></li><li class="btn-toggle-theme"><a class="far fa-sun" onclick="Anatolo.darkLightToggle();"></a></li></div><div class="avatar"><img src="/images/jaemin_2_circle.png"></div></div></div><div class="sidebar animated"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/jaemin_2_circle.png" style="width:220px;" alt="favicon"><h3 title=""><a href="/">Jaemin Song</a></h3><div class="description"><p>I am a graduate student in Industrial and Systems Engineering at Texas A&M University. I have a  a strong interest in applying data science to real-world problems — especially those at the intersection of biomedical systems and engineering analytics.</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/jaemin-song876"><i class="fab fa-github"></i></a></li><li><a href="mailto:jaemin.song@tamu.edu"><i class="fa fa-envelope"></i></a></li></ul></div></div><div class="footer"><div class="p"><span> </span><i class="fa fa-star"></i><span> Jaemin</span></div><div class="by_farbox"><span>Powered by</span><a href="https://hexo.io/zh-cn/" target="_blank"> Hexo</a><span> &</span><a href="https://github.com/Lhcfl/hexo-theme-anatolo" target="_blank"> Anatolo</a></div><div class="beian"></div></div></div><div class="main animated fadeInDown"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><img class="post-cover-image" src="/images/research1_cover.png" alt="Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters"><div class="post animated"><p class="post-categories"><a class="post-category" href="/research/">Research</a></p><div class="post-title"><h3><a>Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters</a></h3></div><p class="post-links"></p><div class="post-content"><p><p><strong>Jaemin Song</strong>, Hyunbum Kim, Yong Oh Lee<br>Heliyon, 2024</p>
-<p>• Frequencies below the 1st formant are crucial for detecting laryngeal diseases.<br>• 1&#x2F;3 octave band filter is suitable for analyzing below the 1st formant frequency.<br>• Grad-CAM images confirmed the importance of frequencies below the 1st formant.<br>• The 1&#x2F;3 octave band filter is superior to MFCC in distinguishing laryngeal diseases.</p>
-<hr>
-<h2 id="Why-voice-based-diagnosis-for-laryngeal-disease"><a href="#Why-voice-based-diagnosis-for-laryngeal-disease" class="headerlink" title="Why voice-based diagnosis for laryngeal disease?"></a>Why voice-based diagnosis for laryngeal disease?</h2><p>Consider a patient suffering from early-stage vocal dysfunction. Traditional diagnostic methods like endoscopy can be invasive and expensive. In contrast, voice signals contain rich information about vocal tract behavior and can be captured easily using a microphone.  </p>
-<p>Voice-based classification offers a non-invasive, cost-effective approach that can aid in:</p>
+MotivationAccurate early diagnosis of laryngeal cancer and related diseases using voice data is sti"><meta name="keywords" content="good"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta id="site_data_static" data-url="/"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/jaemin_2_circle.png"><link rel="stylesheet" href="/js_complied/bundle.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu&amp;display=swap" rel="stylesheet"><script src="/js_complied/bundle.js"></script><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script><meta name="generator" content="Hexo 7.3.0"></head><body> <main-outlet><div class="page-top animated"><div class="nav"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/research/">Research</a></li><li><a href="/project/">Project</a></li><li><a href="/cv">CV</a></li><li><a href="/link">Links</a></li></div><div class="information"><div class="nav_right_btn"><li class="btn-toggle-more"><i class="fa fa-ellipsis"></i></li><li class="btn-go-back"><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li class="btn-search"><a class="fa fa-search" onclick="Anatolo.search.openWindow();"></a></li><li class="btn-toggle-theme"><a class="far fa-sun" onclick="Anatolo.darkLightToggle();"></a></li></div><div class="avatar"><img src="/images/jaemin_2_circle.png"></div></div></div><div class="sidebar animated"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/jaemin_2_circle.png" style="width:220px;" alt="favicon"><h3 title=""><a href="/">Jaemin Song</a></h3><div class="description"><p>I am a graduate student in Industrial and Systems Engineering at Texas A&M University. I have a  a strong interest in applying data science to real-world problems — especially those at the intersection of biomedical systems and engineering analytics.</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/jaemin-song876"><i class="fab fa-github"></i></a></li><li><a href="mailto:jaemin.song@tamu.edu"><i class="fa fa-envelope"></i></a></li></ul></div></div><div class="footer"><div class="p"><span> </span><i class="fa fa-star"></i><span> Jaemin</span></div><div class="by_farbox"><span>Powered by</span><a href="https://hexo.io/zh-cn/" target="_blank"> Hexo</a><span> &</span><a href="https://github.com/Lhcfl/hexo-theme-anatolo" target="_blank"> Anatolo</a></div><div class="beian"></div></div></div><div class="main animated fadeInDown"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><img class="post-cover-image" src="/images/research1_cover.png" alt="Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters"><div class="post animated"><p class="post-categories"><a class="post-category" href="/research/">Research</a></p><div class="post-title"><h3><a>Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters</a></h3></div><p class="post-links"></p><div class="post-content"><p><p><strong>Jaemin Song</strong>, Hyunbum Kim, Yong Oh Lee<br>Heliyon, 2024</p>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>Accurate <strong>early diagnosis of laryngeal cancer and related diseases</strong> using voice data is still challenging.<br>Most existing studies rely on <strong>mel-frequency cepstral coefficients (MFCC)</strong>, which are excellent at capturing speech patterns that align with human auditory perception.  </p>
+<p>However, <strong>MFCC compresses low-frequency regions</strong> (including the fundamental frequency and sub-formant ranges) into very few filters.<br>This is problematic because:</p>
 <ul>
-<li>Early screening for <strong>laryngeal cancer</strong></li>
-<li>Monitoring <strong>dysphonia</strong> progression</li>
-<li>Differentiating between <strong>healthy</strong> and <strong>pathological</strong> voice signals</li>
-</ul>
-<p>This raises fundamental questions in system design:</p>
-<ul>
-<li>Which feature representation (octave vs. MFCC) yields better classification accuracy?</li>
-<li>Can we detect early signs of vocal disorders using limited audio samples?</li>
-<li>How do preprocessing steps (e.g., noise reduction, frame windowing) affect final predictions?</li>
+<li>The <strong>fundamental frequency (≈90–130 Hz in male voices)</strong> and regions <strong>below the first formant (&lt;700 Hz)</strong> often contain <strong>pathological cues</strong>.  </li>
+<li>Early changes in <strong>laryngeal cancer or vocal fold paralysis</strong> manifest as subtle irregularities in these low-frequency ranges.  </li>
+<li>By under-representing these regions, MFCC risks losing critical diagnostic information.</li>
 </ul>
 <hr>
-<h2 id="Introducing-our-voice-classification-pipeline"><a href="#Introducing-our-voice-classification-pipeline" class="headerlink" title="Introducing our voice classification pipeline"></a>Introducing our voice classification pipeline</h2><p>We design and compare two processing pipelines based on the type of spectrogram input:</p>
+<h2 id="Why-1-3-Octave-Band-Filters"><a href="#Why-1-3-Octave-Band-Filters" class="headerlink" title="Why 1&#x2F;3 Octave Band Filters?"></a>Why 1&#x2F;3 Octave Band Filters?</h2><p>The <strong>1&#x2F;3 octave band filter</strong> was adopted because:</p>
 <ul>
-<li><strong>Octave-band spectrograms</strong>: Emphasize energy distribution across frequency bands aligned with human auditory perception.</li>
-<li><strong>MFCCs</strong>: Popular features in speech recognition, but may discard subtle frequency dynamics useful for disease detection.</li>
+<li>It provides <strong>logarithmic spacing of frequency bands</strong>, offering <strong>finer resolution at lower frequencies</strong> and coarser resolution at higher ones.  </li>
+<li>This matches how voice disorders actually alter signals:  <ul>
+<li><strong>Low-frequency instability</strong> (fundamental and sub-formant changes in cancer&#x2F;paralysis).  </li>
+<li><strong>Over-formant noise</strong> (irregular high-frequency harmonics caused by pathological vocal fold vibration).</li>
 </ul>
-<p><img src="/images/paper1_data_conversion.jpg" alt="Fig. 1 Data conversion: MFCC and OFSE"><br>We delve into the technical nuances of Mel Frequency Cepstral Coefficients (MFCC) and octave frequency spectrum energy (OFSE), comparing their suitability and effectiveness in processing voice data for the detection of laryngeal cancer</p>
-<hr>
-<h2 id="Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters"><a href="#Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters" class="headerlink" title="Why Octave-band filter makes better result compared to Mel-filters?"></a>Why Octave-band filter makes better result compared to Mel-filters?</h2><h3>Table 3. Frequency Band Details for Mel Frequency Filter (Hz)</h3>
+</li>
+<li>Compared to MFCC:  <ul>
+<li><strong>&lt;200 Hz</strong> region: MFCC → 2 filters, OFSE(1&#x2F;3 octave) → ~12 filters.  </li>
+<li><strong>&lt;700 Hz (below F1)</strong>: MFCC → 6 filters, OFSE → ~17 filters.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Thus-OFSE-preserves-the-acoustic-nuances-most-affected-by-laryngeal-disease-while-still-representing-formant-and-higher-frequencies"><a href="#Thus-OFSE-preserves-the-acoustic-nuances-most-affected-by-laryngeal-disease-while-still-representing-formant-and-higher-frequencies" class="headerlink" title="Thus, OFSE preserves the acoustic nuances most affected by laryngeal disease, while still representing formant and higher frequencies."></a>Thus, OFSE preserves the <strong>acoustic nuances most affected by laryngeal disease</strong>, while still representing formant and higher frequencies.</h2><h2 id="Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters"><a href="#Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters" class="headerlink" title="Why Octave-band filter makes better result compared to Mel-filters?"></a>Why Octave-band filter makes better result compared to Mel-filters?</h2><h3>Table 3. Frequency Band Details for Mel Frequency Filter (Hz)</h3>
 <table>
   <thead>
     <tr>
@@ -80,17 +79,46 @@
  Unlike MFCC, OFSE uses an octave-band filter, which better preserves low-frequency details—important for analyzing pathological voices.
 
 <p> It processes audio by segmenting it into frames and converting them to the frequency domain, but instead of the mel scale, it applies a logarithmic octave filter bank.</p>
-<p> This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies.</p>
-<h2 id=""><a href="#" class="headerlink" title=" "></a><img src="/images/paper1_octave_fig.jpg" alt="Fig. 2 Transformation process of octave frequency spectrum energy"> </h2><h2 id="Use-Cases-for-this-research"><a href="#Use-Cases-for-this-research" class="headerlink" title="Use Cases for this research"></a>Use Cases for this research</h2><p>Real-world use of this pipeline includes:</p>
-<ul>
-<li><strong>Remote health monitoring</strong>: Easily record and classify voice samples on smartphones.</li>
-<li><strong>Telemedicine applications</strong>: Enable scalable, non-invasive pre-screening.</li>
-<li><strong>AI-assisted diagnostics</strong>: Help clinicians prioritize patients for in-depth examination.</li>
+<h2 id="This-enhances-resolution-in-low-frequencies-making-OFSE-especially-effective-for-detecting-subtle-anomalies-in-laryngeal-pathologies"><a href="#This-enhances-resolution-in-low-frequencies-making-OFSE-especially-effective-for-detecting-subtle-anomalies-in-laryngeal-pathologies" class="headerlink" title=" This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies."></a> This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies.</h2><h2 id="Methods-Summary"><a href="#Methods-Summary" class="headerlink" title="Methods (Summary)"></a>Methods (Summary)</h2><ul>
+<li><strong>Dataset:</strong> 363 male voices (155 healthy, 30 cancer, 81 benign mucosal disease, 97 paralysis).  </li>
+<li><strong>Feature Extraction:</strong>  <ul>
+<li><strong>MFCC</strong>: 26 mel filters, 13 coefficients.  </li>
+<li><strong>OFSE (1&#x2F;3 octave):</strong> Full-band 11–44.6 kHz, segmented into 36 logarithmic filters.</li>
 </ul>
+</li>
+<li><strong>Model:</strong> ResNet CNN, trained with 5-fold CV.  </li>
+<li><strong>Explainability:</strong> Grad-CAM used to visualize discriminative frequency regions.</li>
+</ul>
+<figure>
+  ![Fig. 1](/images/paper1_data_conversion.jpg)
+  <figcaption>Fig. 1. Data conversion: MFCC and OFSE</figcaption>
+</figure>
+
+<p>We delve into the technical nuances of Mel Frequency Cepstral Coefficients (MFCC) and octave frequency spectrum energy (OFSE), comparing their suitability and effectiveness in processing voice data for the detection of laryngeal cancer</p>
+<figure>
+  ![Fig. 2](/images/paper1_octave_fig.jpg)
+  <figcaption>Fig. 2. Transformation process of octave frequency spectrum energy</figcaption>
+</figure>
+---
+
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><ul>
+<li><strong>Binary tasks:</strong>  <ul>
+<li>Healthy vs. Cancer → OFSE &#x3D; <strong>1.00</strong>, MFCC &#x3D; 0.99  </li>
+<li>Healthy vs. Paralysis → OFSE &#x3D; <strong>0.99</strong>, MFCC &#x3D; 0.90  </li>
+<li>Healthy vs. Benign → OFSE &#x3D; <strong>0.99</strong>, MFCC &#x3D; 0.90</li>
+</ul>
+</li>
+<li><strong>Four-class classification:</strong>  <ul>
+<li>OFSE &#x3D; <strong>0.94 ± 0.02</strong>, MFCC &#x3D; 0.71 ± 0.06</li>
+</ul>
+</li>
+</ul>
+<p>Grad-CAM confirmed that <strong>under-formant (&lt;700 Hz)** and **over-formant (&gt;1.7 kHz)</strong> regions were decisive for accurate classification — precisely the ranges where octave band filters provide finer resolution.</p>
 <hr>
-<h2 id="📚-Citation"><a href="#📚-Citation" class="headerlink" title="📚 Citation"></a>📚 Citation</h2><blockquote>
-<p>Song, J., Kim, H., &amp; Lee, Y. O. (2024). <em>Laryngeal Disease Classification Using Voice Data: Octave-band vs. Mel-frequency Filters</em>.</p>
-</blockquote>
+<h2 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h2><p>The decision to use <strong>1&#x2F;3 octave band filters</strong> was driven by the clinical insight that <strong>laryngeal pathology manifests most strongly in low-frequency voice characteristics</strong>.<br>MFCC, though widely used, sacrifices resolution in these regions.<br>By contrast, OFSE distributes more filters to the fundamental and sub-formant ranges, making subtle changes visible to CNN models.  </p>
+<p>This explains why OFSE outperforms MFCC not only in binary tasks (healthy vs. cancer) but especially in the <strong>harder cases</strong>: benign vs. healthy, or paralysis vs. healthy.</p>
+<hr>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p><strong>1&#x2F;3 octave band filters were chosen because they align both with human auditory perception and with the acoustic signatures of laryngeal disease.</strong><br>By preserving critical low-frequency details, OFSE achieves higher diagnostic accuracy and improves interpretability through Grad-CAM.<br>This establishes OFSE as a promising feature extraction method for <strong>AI-driven, non-invasive voice-based diagnosis</strong>.</p>
 <hr>
 </p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2024-12-01</span><a class="tag" href="/categories/Research/" title="Research">Research </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Medical-AI/" title="Medical AI">Medical AI </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Signal-Processing/" title="Signal Processing">Signal Processing </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Deep-Learning/" title="Deep Learning">Deep Learning </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Voice-Analysis/" title="Voice Analysis">Voice Analysis </a><!--span- var words = word_count(item.content);
 - var needtime = duration((words / 300.0) * 60, "seconds");
