@@ -21,7 +21,7 @@
 <li><strong>Octave-band spectrograms</strong>: Emphasize energy distribution across frequency bands aligned with human auditory perception.</li>
 <li><strong>MFCCs</strong>: Popular features in speech recognition, but may discard subtle frequency dynamics useful for disease detection.</li>
 </ul>
-<p><img src="/../images/paper1_data_conversion.jpeg" alt="Fig. 1 Data conversion: MFCC and OFSE"><br>We delve into the technical nuances of Mel Frequency Cepstral Coefficients (MFCC) and octave frequency spectrum energy (OFSE), comparing their suitability and effectiveness in processing voice data for the detection of laryngeal cancer</p>
+<p><img src="/images/paper1_data_conversion.jpg" alt="Fig. 1 Data conversion: MFCC and OFSE"><br>We delve into the technical nuances of Mel Frequency Cepstral Coefficients (MFCC) and octave frequency spectrum energy (OFSE), comparing their suitability and effectiveness in processing voice data for the detection of laryngeal cancer</p>
 <hr>
 <h2 id="Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters"><a href="#Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters" class="headerlink" title="Why Octave-band filter makes better result compared to Mel-filters?"></a>Why Octave-band filter makes better result compared to Mel-filters?</h2><h3>Table 3. Frequency Band Details for Mel Frequency Filter (Hz)</h3>
 <table>
@@ -81,8 +81,7 @@
 
 <p> It processes audio by segmenting it into frames and converting them to the frequency domain, but instead of the mel scale, it applies a logarithmic octave filter bank.</p>
 <p> This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies.</p>
-<hr>
-<h2 id="Use-Cases-for-this-research"><a href="#Use-Cases-for-this-research" class="headerlink" title="Use Cases for this research"></a>Use Cases for this research</h2><p>Real-world use of this pipeline includes:</p>
+<h2 id=""><a href="#" class="headerlink" title=" "></a><img src="/images/paper1_octave_fig.jpg" alt="Fig. 2 Transformation process of octave frequency spectrum energy"> </h2><h2 id="Use-Cases-for-this-research"><a href="#Use-Cases-for-this-research" class="headerlink" title="Use Cases for this research"></a>Use Cases for this research</h2><p>Real-world use of this pipeline includes:</p>
 <ul>
 <li><strong>Remote health monitoring</strong>: Easily record and classify voice samples on smartphones.</li>
 <li><strong>Telemedicine applications</strong>: Enable scalable, non-invasive pre-screening.</li>
