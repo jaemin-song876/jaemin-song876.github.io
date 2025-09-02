@@ -22,8 +22,10 @@ MotivationAccurate early diagnosis of laryngeal cancer and related diseases usin
 </ul>
 </li>
 </ul>
-<h2 id="Thus-OFSE-preserves-the-acoustic-nuances-most-affected-by-laryngeal-disease-while-still-representing-formant-and-higher-frequencies"><a href="#Thus-OFSE-preserves-the-acoustic-nuances-most-affected-by-laryngeal-disease-while-still-representing-formant-and-higher-frequencies" class="headerlink" title="Thus, OFSE preserves the acoustic nuances most affected by laryngeal disease, while still representing formant and higher frequencies."></a>Thus, OFSE preserves the <strong>acoustic nuances most affected by laryngeal disease</strong>, while still representing formant and higher frequencies.</h2><h2 id="Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters"><a href="#Why-Octave-band-filter-makes-better-result-compared-to-Mel-filters" class="headerlink" title="Why Octave-band filter makes better result compared to Mel-filters?"></a>Why Octave-band filter makes better result compared to Mel-filters?</h2><h3>Table 3. Frequency Band Details for Mel Frequency Filter (Hz)</h3>
+<p>Thus, OFSE preserves the <strong>acoustic nuances most affected by laryngeal disease</strong>, while still representing formant and higher frequencies.</p>
+<hr>
 <table>
+  <caption>Table 1. Frequency Band Details for Mel Frequency Filter (Hz)</caption>
   <thead>
     <tr>
       <th>Filter Index</th><th>Lower edge</th><th>Center Frequency</th><th>Upper edge</th>
@@ -47,8 +49,9 @@ MotivationAccurate early diagnosis of laryngeal cancer and related diseases usin
   </tbody>
 </table>
 
-<h3>Table 4. Frequency Band Details for 1/3 Octave Band Filter (Hz)</h3>
+
 <table>
+  <caption>Table 2. Frequency Band Details for 1/3 Octave Band Filter (Hz)</caption>
   <thead>
     <tr>
       <th>Filter Index</th><th>Lower edge</th><th>Center Frequency</th><th>Upper edge</th>
@@ -79,7 +82,9 @@ MotivationAccurate early diagnosis of laryngeal cancer and related diseases usin
  Unlike MFCC, OFSE uses an octave-band filter, which better preserves low-frequency details—important for analyzing pathological voices.
 
 <p> It processes audio by segmenting it into frames and converting them to the frequency domain, but instead of the mel scale, it applies a logarithmic octave filter bank.</p>
-<h2 id="This-enhances-resolution-in-low-frequencies-making-OFSE-especially-effective-for-detecting-subtle-anomalies-in-laryngeal-pathologies"><a href="#This-enhances-resolution-in-low-frequencies-making-OFSE-especially-effective-for-detecting-subtle-anomalies-in-laryngeal-pathologies" class="headerlink" title=" This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies."></a> This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies.</h2><h2 id="Methods-Summary"><a href="#Methods-Summary" class="headerlink" title="Methods (Summary)"></a>Methods (Summary)</h2><ul>
+<p> This enhances resolution in low frequencies, making OFSE especially effective for detecting subtle anomalies in laryngeal pathologies.</p>
+<hr>
+<h2 id="Methods-Summary"><a href="#Methods-Summary" class="headerlink" title="Methods (Summary)"></a>Methods (Summary)</h2><ul>
 <li><strong>Dataset:</strong> 363 male voices (155 healthy, 30 cancer, 81 benign mucosal disease, 97 paralysis).  </li>
 <li><strong>Feature Extraction:</strong>  <ul>
 <li><strong>MFCC</strong>: 26 mel filters, 13 coefficients.  </li>
@@ -90,17 +95,17 @@ MotivationAccurate early diagnosis of laryngeal cancer and related diseases usin
 <li><strong>Explainability:</strong> Grad-CAM used to visualize discriminative frequency regions.</li>
 </ul>
 <figure>
-  ![Fig. 1](/images/paper1_data_conversion.jpg)
+  <img src="/images/paper1_data_conversion.jpg" alt="Fig. 1 Data conversion: MFCC and OFSE">
   <figcaption>Fig. 1. Data conversion: MFCC and OFSE</figcaption>
 </figure>
 
 <p>We delve into the technical nuances of Mel Frequency Cepstral Coefficients (MFCC) and octave frequency spectrum energy (OFSE), comparing their suitability and effectiveness in processing voice data for the detection of laryngeal cancer</p>
 <figure>
-  ![Fig. 2](/images/paper1_octave_fig.jpg)
+  <img src="/images/paper1_octave_fig.jpg" alt="Fig. 2. Transformation process of octave frequency spectrum energy">
   <figcaption>Fig. 2. Transformation process of octave frequency spectrum energy</figcaption>
 </figure>
----
 
+<hr>
 <h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><ul>
 <li><strong>Binary tasks:</strong>  <ul>
 <li>Healthy vs. Cancer → OFSE &#x3D; <strong>1.00</strong>, MFCC &#x3D; 0.99  </li>
