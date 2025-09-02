@@ -1,5 +1,141 @@
-<!DOCTYPE html><html lang="zh-CN" theme="default"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jaemin"><title>Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding. · Jaemin Song</title><meta name="description" content=""><meta name="keywords" content="good"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta id="site_data_static" data-url="/"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/jaemin_2_circle.png"><link rel="stylesheet" href="/js_complied/bundle.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu&amp;display=swap" rel="stylesheet"><script src="/js_complied/bundle.js"></script><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script><meta name="generator" content="Hexo 7.3.0"></head><body> <main-outlet><div class="page-top animated"><div class="nav"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/research/">Research</a></li><li><a href="/project/">Project</a></li><li><a href="/cv">CV</a></li><li><a href="/link">Links</a></li></div><div class="information"><div class="nav_right_btn"><li class="btn-toggle-more"><i class="fa fa-ellipsis"></i></li><li class="btn-go-back"><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li class="btn-search"><a class="fa fa-search" onclick="Anatolo.search.openWindow();"></a></li><li class="btn-toggle-theme"><a class="far fa-sun" onclick="Anatolo.darkLightToggle();"></a></li></div><div class="avatar"><img src="/images/jaemin_2_circle.png"></div></div></div><div class="sidebar animated"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/jaemin_2_circle.png" style="width:220px;" alt="favicon"><h3 title=""><a href="/">Jaemin Song</a></h3><div class="description"><p>I am a graduate student in Industrial and Systems Engineering at Texas A&M University. I have a  a strong interest in applying data science to real-world problems — especially those at the intersection of biomedical systems and engineering analytics.</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/jaemin-song876"><i class="fab fa-github"></i></a></li><li><a href="mailto:jaemin.song@tamu.edu"><i class="fa fa-envelope"></i></a></li></ul></div></div><div class="footer"><div class="p"><span> </span><i class="fa fa-star"></i><span> Jaemin</span></div><div class="by_farbox"><span>Powered by</span><a href="https://hexo.io/zh-cn/" target="_blank"> Hexo</a><span> &</span><a href="https://github.com/Lhcfl/hexo-theme-anatolo" target="_blank"> Anatolo</a></div><div class="beian"></div></div></div><div class="main animated fadeInDown"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><img class="post-cover-image" src="/images/research3_cover.png" alt="Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding."><div class="post animated"><p class="post-categories"><a class="post-category" href="/research/">Research</a></p><div class="post-title"><h3><a>Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding.</a></h3></div><p class="post-links"></p><div class="post-content"><p></p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2023-12-01</span><a class="tag" href="/categories/Research/" title="Research">Research </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Medical-AI/" title="Medical AI">Medical AI </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Signal-Processing/" title="Signal Processing">Signal Processing </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Deep-Learning/" title="Deep Learning">Deep Learning </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Voice-Analysis/" title="Voice Analysis">Voice Analysis </a><!--span- var words = word_count(item.content);
+<!DOCTYPE html><html lang="zh-CN" theme="default"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Jaemin"><title>Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding. · Jaemin Song</title><meta name="description" content="Jaemin Song, Yong Oh Lee, Seho Park, Youn Kyu Lee, Hansang Park, Hyun-Bum Kim
+
+MotivationLaryngeal cancer accounts for a smaller proportion of head an"><meta name="keywords" content="good"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta id="site_data_static" data-url="/"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/jaemin_2_circle.png"><link rel="stylesheet" href="/js_complied/bundle.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu&amp;display=swap" rel="stylesheet"><script src="/js_complied/bundle.js"></script><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script><meta name="generator" content="Hexo 7.3.0"></head><body> <main-outlet><div class="page-top animated"><div class="nav"><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/research/">Research</a></li><li><a href="/project/">Project</a></li><li><a href="/cv">CV</a></li><li><a href="/link">Links</a></li></div><div class="information"><div class="nav_right_btn"><li class="btn-toggle-more"><i class="fa fa-ellipsis"></i></li><li class="btn-go-back"><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li class="btn-search"><a class="fa fa-search" onclick="Anatolo.search.openWindow();"></a></li><li class="btn-toggle-theme"><a class="far fa-sun" onclick="Anatolo.darkLightToggle();"></a></li></div><div class="avatar"><img src="/images/jaemin_2_circle.png"></div></div></div><div class="sidebar animated"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/jaemin_2_circle.png" style="width:220px;" alt="favicon"><h3 title=""><a href="/">Jaemin Song</a></h3><div class="description"><p>I am a graduate student in Industrial and Systems Engineering at Texas A&M University. I have a  a strong interest in applying data science to real-world problems — especially those at the intersection of biomedical systems and engineering analytics.</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/jaemin-song876"><i class="fab fa-github"></i></a></li><li><a href="mailto:jaemin.song@tamu.edu"><i class="fa fa-envelope"></i></a></li></ul></div></div><div class="footer"><div class="p"><span> </span><i class="fa fa-star"></i><span> Jaemin</span></div><div class="by_farbox"><span>Powered by</span><a href="https://hexo.io/zh-cn/" target="_blank"> Hexo</a><span> &</span><a href="https://github.com/Lhcfl/hexo-theme-anatolo" target="_blank"> Anatolo</a></div><div class="beian"></div></div></div><div class="main animated fadeInDown"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><img class="post-cover-image" src="/images/research3_cover.png" alt="Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding."><div class="post animated"><p class="post-categories"><a class="post-category" href="/research/">Research</a></p><div class="post-title"><h3><a>Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding.</a></h3></div><p class="post-links"><a class="post-link" href="https://ieeexplore.ieee.org/abstract/document/10386634" target="_blank">PDF 📄</a></p><div class="post-content"><p><p><strong>Jaemin Song</strong>, Yong Oh Lee, Seho Park, Youn Kyu Lee, Hansang Park, Hyun-Bum Kim</p>
+<hr>
+<h1 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h1><p>Laryngeal cancer accounts for a smaller proportion of head and neck cancers compared to lung or breast cancer, but it remains a serious health concern. Diagnosis still relies on <strong>laryngoscopy</strong>, which requires hospital-based equipment and specialist expertise. Although effective, the procedure is invasive, uncomfortable, and not always accessible.</p>
+<p>The earliest and most common symptom is <strong>voice change</strong>. However, detecting subtle alterations is difficult because of wide variability across individuals and the influence of many factors (sex, age, physiology, lifestyle, emotional state). Furthermore, benign disorders such as nodules or polyps can mimic the vocal characteristics of malignancy.</p>
+<p>Recent AI approaches have explored using <strong>voice signals transformed into MFCCs</strong> for classification, typically with CNN models. While promising, accuracy often decreases when moving from binary tasks (healthy vs cancer) to <strong>multi-class settings</strong>, largely due to overlapping voice characteristics and data imbalance.</p>
+<p><strong>This study proposes a multimodal approach:</strong>  </p>
+<ul>
+<li>Go beyond MFCC-only features  </li>
+<li>Embed <strong>patient-specific metadata</strong> (e.g., age, smoking history) and <strong>quantitative acoustic indicators</strong> (F0, vF0, MFR, NHR)  </li>
+<li>Fuse them with MFCC into a <strong>single CNN input</strong>  </li>
+<li>Evaluate whether this integration boosts classification accuracy.</li>
+</ul>
+<hr>
+<h1 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h1><h2 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h2><ul>
+<li><strong>Participants:</strong> 363 male subjects (2015–2022, single-center cohort).  </li>
+<li><strong>Groups:</strong> Healthy (155), Laryngeal cancer (30), Benign mucosal disease (81), Vocal fold paralysis (97).  </li>
+<li><strong>Recording setup:</strong> Kay CSL (Model 5121), Shure SM48 microphone, 50 kHz sampling rate, background noise &lt; 45 dB HL.  </li>
+<li><strong>Task:</strong> sustained vowel &#x2F;a&#x2F; for ≥4 seconds at comfortable loudness (55–65 dB HL).  </li>
+<li><strong>Ethics:</strong> Institutional Review Board approval; retrospective study.</li>
+</ul>
+<h2 id="Baseline-Feature-—-MFCC"><a href="#Baseline-Feature-—-MFCC" class="headerlink" title="Baseline Feature — MFCC"></a>Baseline Feature — MFCC</h2><figure>
+  <img src="/images/mfcc_conversion_example.jpg" alt="MFCC conversion from voice signal">
+  <figcaption>Fig. 1. Voice signal converted into an MFCC spectrogram.</figcaption>
+</figure>
+
+<ul>
+<li>Voice segmented into <strong>0.5 s intervals</strong>  </li>
+<li>Window size <strong>0.02 s</strong>, hop <strong>0.01 s</strong>  </li>
+<li>Extracted <strong>13 MFCC coefficients per frame</strong>  </li>
+<li>Aggregated into 2D MFCC spectrograms for CNN input</li>
+</ul>
+<h2 id="Correlation-Analysis"><a href="#Correlation-Analysis" class="headerlink" title="Correlation Analysis"></a>Correlation Analysis</h2><p>To identify additional predictive factors, multinomial logistic regression was conducted using three classes: healthy (reference), laryngeal cancer, and non-malignant voice disorder.  </p>
+<ul>
+<li>Variables considered: patient age, smoking history, alcohol intake, and acoustic measures such as jitter, vF0, shimmer, MFR, NHR, etc.  </li>
+<li>Results highlighted <strong>age, smoking, F0, vF0, MFR, NHR</strong> as most correlated with malignancy.</li>
+</ul>
+<blockquote>
+<p>Table III (from the paper) reports the regression coefficients, odds ratios, and significance for each factor.</p>
+</blockquote>
+<h2 id="Multimodal-Embedding"><a href="#Multimodal-Embedding" class="headerlink" title="Multimodal Embedding"></a>Multimodal Embedding</h2><p>The selected metadata and acoustic parameters were <strong>embedded alongside MFCC</strong> in a composite input image:</p>
+<ul>
+<li>Base: <strong>224×224 MFCC spectrogram</strong> placed centrally  </li>
+<li>Surrounding tiles: embeddings of <strong>Age, Smoking, F0, vF0, MFR, NHR</strong>  </li>
+<li>Continuous values binned into 10 categories before embedding  </li>
+<li>Spatial arrangement positioned each variable consistently around the MFCC core</li>
+</ul>
+<figure>
+  <img src="/images/ieee_embedding_layout.jpg" alt="Multimodal embedding layout">
+  <figcaption>Fig. 2. Layout of multimodal embedding: MFCC in the center, surrounded by patient and acoustic embeddings.</figcaption>
+</figure>
+
+<p>This composite image was then used as CNN input.</p>
+<h2 id="Models-Validation"><a href="#Models-Validation" class="headerlink" title="Models &amp; Validation"></a>Models &amp; Validation</h2><ul>
+<li><strong>CNN (ResNet50 backbone)</strong> — pre-trained on ImageNet, modified with GAP, Dense(64), Dense(16), dropout (0.5 ×2), BatchNorm, ReLU, and final softmax  </li>
+<li><strong>Baselines:</strong>  <ul>
+<li><strong>SVM</strong> (MFCC spectrogram input, balanced class weights)  </li>
+<li><strong>LightGBM</strong> (MFCC coefficient vectors, cancer weight&#x3D;5)  </li>
+<li><strong>ANN</strong> (two hidden layers: 32, 8 units; MFCC vectors)</li>
+</ul>
+</li>
+<li><strong>Validation:</strong> 5-fold cross-validation  </li>
+<li><strong>Metrics:</strong> Accuracy, Precision, Recall, F1-score</li>
+</ul>
+<hr>
+<h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><h2 id="MFCC-only-CNN-vs-Classical-ML"><a href="#MFCC-only-CNN-vs-Classical-ML" class="headerlink" title="MFCC-only CNN vs Classical ML"></a>MFCC-only CNN vs Classical ML</h2><p>CNN with MFCC input clearly outperformed other machine learning baselines.</p>
+<table>
+  <caption>Table IV. Performance with MFCC-only input (5-fold CV)</caption>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CNN (ResNet, MFCC image)</strong></td>
+      <td><strong>91.67%</strong></td>
+      <td><strong>90.85%</strong></td>
+      <td><strong>83.24%</strong></td>
+      <td><strong>85.72%</strong></td>
+    </tr>
+    <tr>
+      <td>SVM / LightGBM / ANN</td>
+      <td>Lower across all metrics</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Takeaway:</strong> CNN effectively captures disease-related spectral patterns from MFCC, exceeding traditional ML methods.</p>
+<h2 id="Impact-of-Multimodal-Embedding"><a href="#Impact-of-Multimodal-Embedding" class="headerlink" title="Impact of Multimodal Embedding"></a>Impact of Multimodal Embedding</h2><p>Embedding patient information and acoustic indicators alongside MFCC produced a dramatic performance gain.</p>
+<table>
+  <caption>Table V. CNN with MFCC-only vs MFCC + Embedded Variables (5-fold CV)</caption>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MFCC-only</td>
+      <td>91.67%</td>
+      <td>90.85%</td>
+      <td>83.24%</td>
+      <td>85.72%</td>
+    </tr>
+    <tr>
+      <td><strong>MFCC + (Age, Smoking, F0, vF0, MFR, NHR)</strong></td>
+      <td><strong>99.69%</strong></td>
+      <td><strong>99.69%</strong></td>
+      <td><strong>99.51%</strong></td>
+      <td><strong>99.60%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Performance gain:</strong><br>+8.0% in accuracy, +8.8% in precision, +16.3% in recall, +13.9% in F1.</p>
+<hr>
+<h1 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h1><ul>
+<li><strong>Voice-only MFCC</strong> is a strong baseline but still limited by inter-patient variability and overlapping disease patterns.  </li>
+<li><strong>Embedding patient metadata and acoustic features</strong> creates a richer representation, allowing CNNs to learn <strong>joint patterns</strong> between clinical background and voice.  </li>
+<li>This fusion boosted accuracy to near-perfect levels in cross-validation, showing that <strong>simple, clinically available information</strong> can dramatically improve AI-based screening.  </li>
+<li>Practical implication: future diagnostic tools should not rely solely on voice spectrograms but instead <strong>leverage multimodal patient data</strong> for robust performance.</li>
+</ul>
+<hr>
+</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2023-12-01</span><a class="tag" href="/categories/Research/" title="Research">Research </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Medical-AI/" title="Medical AI">Medical AI </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Signal-Processing/" title="Signal Processing">Signal Processing </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Deep-Learning/" title="Deep Learning">Deep Learning </a><i class="fa fa-tag"></i><a class="tag" href="/tags/Voice-Analysis/" title="Voice Analysis">Voice Analysis </a><!--span- var words = word_count(item.content);
 - var needtime = duration((words / 300.0) * 60, "seconds");
 - var timestr = (time(needtime, "m") == "0" ? "" : time(needtime, "m") + __("time.minu")) + time(needtime, "s") + __("time.senc");
 = __("article.about") + words + __("article.words") + ", " + timestr + __("article.read")
---></div></div></div></div><div class="share"><div class="share-btn linkonly"><a class="fa fa-link" onclick="Utils.copyToClipboard(window.location.href)" ref="sidebar"></a></div><div class="share-btn evernote"><a class="fa fa-share" onclick="Anatolo.share.native()" ref="sidebar"></a></div><div class="share-btn twitter"><a class="fab fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/intent/tweet?text=I%20have%20found%20a%20great%20blog.%0A%0AJaemin%20Song%20%C2%B7%20Enhancing%20Vocal-Based%20Laryngeal%20Cancer%20Screening%20with%20Additional%20Patient%20Information%20and%20Voice%20Signal%20Embedding.%0Ahttps://jaemin-song876.github.io/2023/12/01/laryngeal-research-3/%0A"></a></div><div class="share-btn mastodon"><a class="fab fa-mastodon" target="_blank" rel="noopener" href="https://mastodonshare.com/?text=I%20have%20found%20a%20great%20blog.%0A%0AJaemin%20Song%20%C2%B7%20Enhancing%20Vocal-Based%20Laryngeal%20Cancer%20Screening%20with%20Additional%20Patient%20Information%20and%20Voice%20Signal%20Embedding.%0Ahttps://jaemin-song876.github.io/2023/12/01/laryngeal-research-3/%0A"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2023/12/01/2025-summer-project-1/" title="Enhancing Vocal-Based Laryngeal Cancer Screening with Additional Patient Information and Voice Signal Embedding.">Previous</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2023/12/01/laryngeal-research-2/" title="Classification of Laryngeal Diseases including Laryngeal Cancer, Benign Mucosal Disease, and Vocal Cord Paralysis by Artificial Intelligence using Voice Analysis.">Next</a></li></ul></div><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script></div></div></div></div></main-outlet><script>(async function(){ if (Anatolo.search == null) await Anatolo.getMsg("search-init"); Anatolo.search.config = {translation:{posts:"Posts",pages:"Pages",categories:"Categories",tags:"Tags",untitled:"(Untitled)",} }; })()</script><div class="searchbox ins-search modal-cover"><div class="searchbox-container ins-search-container modal-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="Search..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="Anatolo.search.closeWindow();"></a></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"><p>Seraching...</p></div></div></div></div><button class="float-button hide" id="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" type="button" title="Scroll to top"><i class="fa fa-angle-up"></i></button><div class="modal-cover" id="success-indicator"><div class="modal-container indicator"><i class="fa fa-check"></i></div></div></body></html>
+--></div></div></div></div><div class="share"><div class="share-btn linkonly"><a class="fa fa-link" onclick="Utils.copyToClipboard(window.location.href)" ref="sidebar"></a></div><div class="share-btn evernote"><a class="fa fa-share" onclick="Anatolo.share.native()" ref="sidebar"></a></div><div class="share-btn twitter"><a class="fab fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/intent/tweet?text=I%20have%20found%20a%20great%20blog.%0A%0AJaemin%20Song%20%C2%B7%20Enhancing%20Vocal-Based%20Laryngeal%20Cancer%20Screening%20with%20Additional%20Patient%20Information%20and%20Voice%20Signal%20Embedding.%0Ahttps://jaemin-song876.github.io/2023/12/01/laryngeal-research-3/%0A"></a></div><div class="share-btn mastodon"><a class="fab fa-mastodon" target="_blank" rel="noopener" href="https://mastodonshare.com/?text=I%20have%20found%20a%20great%20blog.%0A%0AJaemin%20Song%20%C2%B7%20Enhancing%20Vocal-Based%20Laryngeal%20Cancer%20Screening%20with%20Additional%20Patient%20Information%20and%20Voice%20Signal%20Embedding.%0Ahttps://jaemin-song876.github.io/2023/12/01/laryngeal-research-3/%0A"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2023/12/01/laryngeal-research-2/" title="Classification of Laryngeal Diseases including Laryngeal Cancer, Benign Mucosal Disease, and Vocal Cord Paralysis by Artificial Intelligence using Voice Analysis.">Previous</a></li></ul></div><script>Anatolo.comment.setConfig({"valine":{"enable":false,"appid":null,"appkey":null,"notify":false,"verify":false,"avatar":"mm","placeholder":"hello, world"},"gitment":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"gitalk":{"enable":false,"owner":"Your GitHub ID","repo":"Repo to store comments","client_id":"Your client ID","client_secret":"Your client secret"},"duoshuo":null,"disqus":null,"gentie":null})</script></div></div></div></div></main-outlet><script>(async function(){ if (Anatolo.search == null) await Anatolo.getMsg("search-init"); Anatolo.search.config = {translation:{posts:"Posts",pages:"Pages",categories:"Categories",tags:"Tags",untitled:"(Untitled)",} }; })()</script><div class="searchbox ins-search modal-cover"><div class="searchbox-container ins-search-container modal-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="Search..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="Anatolo.search.closeWindow();"></a></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"><p>Seraching...</p></div></div></div></div><button class="float-button hide" id="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" type="button" title="Scroll to top"><i class="fa fa-angle-up"></i></button><div class="modal-cover" id="success-indicator"><div class="modal-container indicator"><i class="fa fa-check"></i></div></div></body></html>
